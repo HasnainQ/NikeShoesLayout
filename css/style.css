@@ -1,0 +1,615 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none !important;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #e4e4e4;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #64676b;
+  display: block;
+  transition: 0.3s;
+  font-family: "Poppins";
+  position: relative;
+}
+
+.sidenav .nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 25px;
+  left: 12%;
+  background-color: #64676b;
+  width: 100%;
+  height: 2px;
+  transform: scale(0);
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #24272b;
+}
+.sidenav .nav a:hover::after {
+  transform: scale(0.7);
+  transform-origin: center;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 36px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 52px;
+  text-align: center;
+}
+
+.nav {
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  line-height: 76px;
+  transform: translate(-50%, -50%);
+}
+
+.hamburger {
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  height: 40px;
+  width: 40px;
+}
+
+.hamburger span {
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+  top: 4px;
+}
+
+.logo-img {
+  padding-top: 8px;
+}
+
+.bg {
+  background-image: url(../images/hero.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.shoes {
+  position: absolute;
+  left: 57%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home-text {
+  display: inline-block;
+  position: absolute;
+  width: 430px;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.home-text h1 {
+  font-size: 102px;
+  letter-spacing: 4px;
+  font-family: "Roboto", sans-serif;
+}
+
+.home-text h3 {
+  font-family: "Poppins", sans-serif;
+  background-color: #82f4d3;
+  padding: 13px;
+  font-size: 23px;
+  position: relative;
+  font-weight: 700;
+  left: 2px;
+  bottom: 0px;
+  margin: 0;
+}
+
+.brand {
+  border: 1px solid #82f4d3;
+  position: relative;
+  left: 6px;
+  width: 245px;
+}
+
+.home-para {
+  position: absolute;
+  bottom: 0;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 14px;
+  text-align: right;
+}
+
+.social-media {
+  position: absolute;
+  display: grid;
+  padding: 24px;
+  right: 0;
+  bottom: 0;
+  line-height: 20px;
+}
+
+.social-media i {
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  margin-bottom: 12px;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  padding-top: 13px;
+  font-size: 15px;
+}
+
+.social-media1 {
+  position: absolute;
+  padding: 15px;
+  line-height: 20px;
+}
+
+.social-media1 i {
+  color: rgb(129, 129, 129);
+  border-radius: 50%;
+  margin-bottom: 12px;
+  padding: 13px 18px 0px 0px;
+  font-size: 15px;
+}
+
+/* header close  */
+
+.about-img {
+  background-color: #ededed;
+  height: 450px;
+  border: 7px solid white;
+  box-shadow: 0px 0px 10px 1px rgb(232 232 232);
+  width: 521px;
+}
+
+.about-us {
+  margin-top: 117px;
+}
+
+.about-text {
+  margin: auto;
+}
+
+.about-text a {
+  background-color: #82f4d3;
+  color: #111;
+  padding: 8px 20px;
+}
+
+.about-text h3 {
+  font-family: "Roboto", serif;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.about-text p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.02rem;
+  letter-spacing: 1px;
+  line-height: 1.7;
+}
+
+/* about us close */
+
+.arrivels {
+  margin-top: 77px;
+}
+
+.arrivels h3 {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  padding-bottom: 50px;
+  font-size: 38px;
+}
+.main-hover {
+  cursor: pointer;
+}
+
+.shoes1 {
+  background-color: #ededed;
+  padding: 71px 0px 0px 0px;
+  height: 246px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+.product-text p:nth-child(1) {
+  margin-top: 1rem;
+  margin-bottom: 0rem !important;
+  display: flex;
+  justify-content: space-between;
+}
+.product-text p:nth-child(2) {
+  font-size: 0.7rem;
+}
+.main-hover:hover .shoes1 {
+  background: #82f4d3;
+}
+
+/* .arrivels close  */
+
+.collect-image {
+  border: 6px solid white;
+  box-shadow: 0px 0px 10px 1px rgb(232 232 232);
+  background-color: #fde7ed;
+  width: 365px;
+}
+
+.collection {
+  margin-top: 100px;
+}
+
+.collect-text h3 {
+  font-family: "Roboto", serif;
+  letter-spacing: 1px;
+}
+
+.collect-text p {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  margin: 16px 0px 35px 0px;
+  line-height: 28px;
+}
+
+.collect-text a {
+  background: #82f4d3;
+  padding: 10px 20px;
+  color: black;
+}
+
+.collect {
+  margin: auto;
+}
+
+.color-img {
+  background: linear-gradient(#c0f5e6, #9eecd5);
+  height: 245px;
+  width: 220px;
+  position: absolute;
+  top: 221px;
+  z-index: -1;
+  left: 259px;
+}
+
+/* collection close  */
+
+.throught {
+  background-color: #f8f8f8;
+  margin-top: 89px;
+  padding: 55px 0px 8px 0px;
+}
+.item {
+  text-align: center;
+  display: inline-block;
+  padding: 0px 223px;
+  line-height: 30px;
+}
+
+.item h3 {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+}
+
+.item p {
+  font-size: 0.95rem;
+}
+
+.owl-next {
+  position: absolute;
+  right: 79px;
+  top: 40px;
+  display: inline-block;
+  font-size: 40px !important;
+}
+
+.owl-prev {
+  position: absolute;
+  left: 79px;
+  top: 40px;
+  display: inline-block;
+  font-size: 40px !important;
+}
+
+/* footer start  */
+
+.footer-row {
+  margin-top: 140px;
+  padding: 40px 0px 0px 0px;
+  border-top: 1px solid rgb(199, 199, 199);
+}
+
+.footer-row ul li {
+  list-style: none;
+  line-height: 30px;
+}
+
+.footer-row ul li a {
+  color: #212529;
+  font-family: "Poppins";
+  font-size: 1rem;
+}
+
+.submit {
+  background-color: #82f4d3;
+  padding: 0px 9px;
+  margin: -6px;
+  outline: white;
+  border: none;
+}
+
+.submit-btn {
+  border: 1px #b5b5b5 solid;
+  padding: 7px;
+}
+.submit-btn:focus {
+  outline: none;
+  box-shadow: inset 1px 1px 3px 0px #b7b7b7;
+}
+.brand-btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.sign-text p {
+  font-size: 0.82rem;
+  font-family: "POPPINS";
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive Start */
+@media (max-width: 1025px) {
+  .shoes img {
+    width: 150%;
+  }
+  .home-text {
+    left: 25%;
+  }
+  .home-text h1 {
+    font-size: 4rem;
+  }
+  .home-text p {
+    font-size: 0.859rem;
+    margin-right: 30px;
+  }
+  .brand {
+    width: 170px;
+  }
+  .home-text h3 {
+    font-size: 0.859rem;
+  }
+  .about-text h3 {
+    font-size: 1.6rem;
+  }
+  .about-img {
+    width: 450px;
+  }
+  .about-img img {
+    width: 110%;
+  }
+  .about-text p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 769px) {
+  .color-img {
+    left: 155px;
+    top: 160px;
+  }
+  .submit-btn {
+    padding: 3px;
+  }
+  .home-text {
+    padding: 60px;
+  }
+  .about-img {
+    width: 355px;
+    height: 345px;
+  }
+  .about-text p {
+    font-size: 0.89rem;
+  }
+  .home-para p {
+    font-size: 11px;
+  }
+  .about-position {
+    padding-left: 20px;
+    text-align: justify;
+  }
+  .about-text h3 {
+    font-size: 1.5rem;
+  }
+  .shoes1 {
+    height: 180px;
+  }
+  .shoes1 img {
+    width: 80%;
+    margin-top: -20px;
+  }
+  .arrivels h3 {
+    font-size: 30px;
+  }
+  .item {
+    padding: 0px 140px;
+  }
+  .collect-image {
+    width: 330px;
+    height: 360px;
+  }
+  .collect-image img {
+    width: 100%;
+    height: 100%;
+  }
+  .footer-logo img {
+    width: 100%;
+  }
+  .footer-row ul li a {
+    font-size: 0.9rem;
+  }
+  .social-media1 i {
+    padding: 13px 15px 0px 0px;
+  }
+}
+@media (max-width: 426px) {
+  .shoes {
+    left: 1%;
+    top: 21%;
+    transform: translate(0%, 0%);
+  }
+  .shoes img {
+    width: 100%;
+  }
+  .home-text h1 {
+    font-size: 1.6rem;
+  }
+  .home-text {
+    position: absolute;
+    top: 65%;
+    left: 49%;
+    padding: 0;
+    text-align: center;
+  }
+  .brand {
+    /* border: none; */
+    left: 30%;
+  }
+  .about-img {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .shoes1 img {
+    width: 50%;
+    margin-top: -40px;
+  }
+  .shoes2 img {
+    width: 170px;
+    margin-top: -50px;
+  }
+  .item {
+    padding: 0px 43px;
+  }
+  .home-text h3 {
+    left: 0;
+  }
+  .home-text p {
+    margin-right: 0;
+  }
+  .owl-prev,
+  .owl-next {
+    display: none;
+  }
+  .collect-image {
+    width: 300px;
+    height: 325px;
+    margin-top: 50px;
+  }
+  .footer-logo img {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 376px) {
+  .home-text p {
+    padding: 0 30px;
+  }
+  .home-text {
+    width: 380px;
+  }
+  .about-img img {
+    width: 100%;
+  }
+  .shoes {
+    top: 14%;
+  }
+  .home-text p {
+    display: none;
+  }
+  .home-text h1 {
+    font-size: 3.5rem;
+  }
+  .about-img {
+    width: 315px;
+    height: 300px;
+  }
+  .color-img {
+    left: 138px;
+  }
+}
+@media (max-width: 321px) {
+  .about-img {
+    margin-left: 0px;
+  }
+  .color-img {
+    left: 88px;
+  }
+  .collect-image {
+    width: 280px;
+    height: 310px;
+  }
+  .home-text {
+    width: 319px;
+  }
+  .home-text h1 {
+    margin-left: 35px;
+  }
+  .about-img {
+    width: 285px;
+    height: 258px;
+  }
+  .about-us {
+    margin-top: 40px;
+  }
+}
+/* Responsive End */
